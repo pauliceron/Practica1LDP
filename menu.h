@@ -51,7 +51,7 @@ class Menu
         cout<<"Ingresa palabra, te quedan: "<<7-i<<" intentos"<<endl;
         string palabra = "";
         cin>>palabra;
-        while(palabra.size()!=palabrita.size()){ //Verificar longitud de la palabra
+        while(palabra.size()!=palabrita.size()){ 
         	if(palabra.size()<palabrita.size()){
         		cout<<"Esta palabra es muy corta. Por favor ingrese una de "<<palabrita.size()<<" caracteres"<<endl;
         	}else if(palabra.size()>palabrita.size()){
