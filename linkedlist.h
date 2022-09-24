@@ -49,21 +49,21 @@ node* perder(node* h1){
   return h1;
 }
 
-node* comparar (node* h1,node* h2, bool &f, string p) //Entran los punteros de 2 cabezas
+node* comparar (node* h1,node* h2, bool &f, string p) 
 {
   node* nh1 = h1;
   node* nh2 = h2;
   int i = 1;
   int j = 1;
   int c = 0;
-  while(nh2 != NULL) //Mientras LL2 no sea Nula
+  while(nh2 != NULL) 
   {
-    nh1 = h1; //Reiniciar posición de la lista 1 para volver a comparar
-    while(nh1 != NULL) //Mientras la LL1 no sea Nula
+    nh1 = h1; 
+    while(nh1 != NULL) 
     {
-      if(nh1->data==nh2->data&&i==j) //Si data== y pos==
+      if(nh1->data==nh2->data&&i==j) 
       {
-        nh2->color = "verde"; //Letra verde
+        nh2->color = "verde"; 
         c=c+1;
         if(c==p.size()){
 		    	f = true;
@@ -99,10 +99,6 @@ node* verifyVerde(node* h2){
         if(letter==test->data && test->color=="verde"){
           nh2->color="blanco";
         }
-        /*
-        if(letter==test->data && test->color=="amarillo"){
-          nh2->color="blanco";
-        }*/
         test=test->next;
       }
     }
